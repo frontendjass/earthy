@@ -1,11 +1,14 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="h-screen bg-mosswood-200">
+    <div className='bg-mosswood-200'>
       <Navbar />
-      {/* <Hero /> */}
+      <main className='px-6'>
+        <Hero />
+        <div className='h-20'></div>
+      </main>
     </div>
   );
 }
