@@ -1,3 +1,4 @@
+import AboutUs from './components/AboutUs';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 
@@ -8,6 +9,7 @@ function App() {
         <Navbar />
         <main className='px-6 md:px-16'>
           <Hero />
+          <AboutUs />
           <div className='h-20'></div>
         </main>
       </div>
