@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className='flex justify-between items-center px-4 h-14 bg-kelp-800 rounded-b-2xl'>
+      <nav className='flex justify-between items-center px-4 md:px-16 h-14 bg-kelp-800 rounded-b-2xl'>
         <span className='uppercase font-quicksand font-semibold text-2xl text-mosswood-200'>
           Earthy
         </span>
