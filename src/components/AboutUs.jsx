@@ -9,12 +9,12 @@ export default function AboutUs() {
   const pStyle = 'text-mosswood-300 font-quicksand';
 
   return (
-    <section>
+    <section id='about'>
       <div className='flex flex-col gap-3 pb-5'>
         <h2 className='text-center font-playfair text-4xl text-kelp-800 uppercase py-5'>
           Rooted in Tradition Since 1897
         </h2>
-        <h3 className='text-center font-tangerine text-4xl italic'>
+        <h3 className='text-center font-tangerine text-4xl italic text-kelp-800 '>
           Honoring Our Past, Shaping the Future
         </h3>
       </div>
@@ -46,10 +46,18 @@ export default function AboutUs() {
           </p>
         </div>
         <div className={container}>
-          <img src={flowersPhoto} alt='Some white roses' />
+          <img
+            src={flowersPhoto}
+            alt='Some white roses'
+            className='w-full h-full object-cover'
+          />
         </div>
         <div className={container}>
-          <img src={cowPhoto} alt='A cow' />
+          <img
+            src={cowPhoto}
+            alt='A cow'
+            className='w-full h-full object-cover'
+          />
         </div>
       </div>
     </section>

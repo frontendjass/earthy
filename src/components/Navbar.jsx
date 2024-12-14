@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className='flex justify-between items-center px-4 md:px-16 h-14 bg-kelp-800 rounded-b-2xl'>
+      <nav className='flex justify-between items-center px-4 md:px-16 h-14 bg-kelp-800 rounded-b-2xl sticky top-0 z-10'>
         <span className='uppercase font-quicksand font-semibold text-2xl text-mosswood-200'>
           Earthy
         </span>
@@ -40,16 +40,16 @@ export default function Navbar() {
 `}
             >
               <div className='flex flex-col sm:flex-row sm:gap-4'>
-                <li>
+                <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   <a href='#home'>Home</a>
                 </li>
-                <li>
+                <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   <a href='#about'>About</a>
                 </li>
-                <li>
+                <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   <a href='#services'>Services</a>
                 </li>
-                <li>
+                <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   <a href='#contact'>Contact</a>
                 </li>
               </div>
